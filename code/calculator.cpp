@@ -262,6 +262,7 @@ double evaluate_expression(const std::string& expr);// evaluate the expression
 double get_number(std::istringstream& iss) {// get the number
     double num;
     iss >> num;// get the number
+
     return num;
 }
 
@@ -310,6 +311,7 @@ int main() {
     std::cout << "Supported operators: +, -, *, /, %" << std::endl;
     std::cout << "Enter expressions to evaluate or assign variables using the format: *variable_name* =value" << std::endl;
     std::cout << "For example, to assign the value 5 to variable x, enter: x = 5 or y = -9 " << std::endl;
+    std::cout << "To unassign a variable, set it equal to a new value and continue use." << std::endl;
 
     while (true) {// loop until user enters 'q'
         std::string input;// store user input
